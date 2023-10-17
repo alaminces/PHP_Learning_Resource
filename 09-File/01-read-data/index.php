@@ -65,6 +65,14 @@ while ( $line = fgets($fp2) ) {
   echo $line;
 }
 
+// fgetc function of the file 
+while ( $data = fgetc($fp) ) {
+  echo $data."***";
+}
+
+// to read entire file
+echo fread($fp,filesize($filename));
+
 fclose($fp2);
 
 
